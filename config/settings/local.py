@@ -6,8 +6,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django_rest_test',
-        'USER': 'root',
-        'PASSWORD': 'root1234',
+        'USER': get_secret("LOCAL_DB_USER"),
+        'PASSWORD': get_secret("LOCAL_DB_PWD"),
         'HOST': 'localhost',
         'PORT': '3306',
     }
